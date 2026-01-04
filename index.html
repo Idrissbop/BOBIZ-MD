@@ -1,142 +1,238 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Contact | Idriss Ben Fares</title>
+<title>Idriss.Dev | Full Stack Developer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(135deg, #25D366, #075E54);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: bgMove 6s infinite alternate;
 }
 
-@keyframes bgMove {
-    from {background-position: left;}
-    to {background-position: right;}
-}
-
-.card {
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(12px);
-    padding: 30px;
-    border-radius: 25px;
-    width: 320px;
-    text-align: center;
+body {
+    background: radial-gradient(circle at top, #1b2a4e, #060b1a);
     color: #fff;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    animation: pop 1s ease;
+    min-height: 100vh;
 }
 
-@keyframes pop {
-    from {transform: scale(0.8); opacity: 0;}
-    to {transform: scale(1); opacity: 1;}
+/* Navbar */
+.nav {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo {
-    width: 90px;
-    animation: float 2s infinite ease-in-out;
+.nav h2 {
+    color: #7aa2ff;
 }
 
-@keyframes float {
-    0% {transform: translateY(0);}
-    50% {transform: translateY(-10px);}
-    100% {transform: translateY(0);}
+.nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 20px;
 }
 
-h1 {
-    margin: 15px 0 5px;
-    font-size: 22px;
+/* Hero */
+.hero {
+    padding: 60px 40px;
+    max-width: 900px;
 }
 
-.number {
-    font-size: 18px;
-    margin-bottom: 15px;
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.hero span {
+    color: #7aa2ff;
+}
+
+.hero p {
+    margin-top: 15px;
+    color: #bbb;
+    max-width: 600px;
+}
+
+.buttons {
+    margin-top: 25px;
 }
 
 .btn {
-    display: block;
-    margin: 10px 0;
-    padding: 12px;
-    background: #25D366;
-    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
     text-decoration: none;
-    border-radius: 50px;
-    font-size: 16px;
-    transition: 0.3s;
+    margin-right: 10px;
+    display: inline-block;
+    font-weight: bold;
 }
 
-.btn:hover {
-    background: #1db954;
-    transform: scale(1.05);
+.btn-primary {
+    background: #7aa2ff;
+    color: #000;
 }
 
-.socials {
-    margin-top: 10px;
+.btn-secondary {
+    border: 1px solid #7aa2ff;
+    color: #7aa2ff;
 }
 
-.socials a img {
-    width: 34px;
-    margin: 0 10px;
-    transition: 0.3s;
+/* Info */
+.info {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #ccc;
 }
 
-.socials a img:hover {
-    transform: scale(1.3);
+/* Skills */
+.skills {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.qr img {
-    width: 140px;
-    margin-top: 15px;
+.skill {
+    background: rgba(255,255,255,0.05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Section */
+.section {
+    margin: 80px 40px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.section p {
+    color: #aaa;
+    max-width: 600px;
+}
+
+/* Cards */
+.cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
     border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(122,162,255,0.15);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #7aa2ff;
 }
 
 footer {
-    margin-top: 15px;
-    font-size: 13px;
-    opacity: 0.9;
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+@media(max-width:600px){
+    .hero h1 {
+        font-size: 32px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="card">
-    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-
-    <h1>تواصل معي</h1>
-    <div class="number">📱 0761524771</div>
-
-    <a class="btn" href="https://wa.me/212761524771" target="_blank">
-        فتح واتساب
-    </a>
-
-    <div class="socials">
-        <a href="https://www.facebook.com/Revox.fc" target="_blank" title="Facebook">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
-        </a>
-
-        <a href="https://www.instagram.com/rx.i9k" target="_blank" title="Instagram">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
-        </a>
+<!-- Navbar -->
+<div class="nav">
+    <h2>Idriss.Dev</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Work</a>
+        <a href="#">Contact</a>
     </div>
-
-    <div class="qr">
-        <p>QR Code</p>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/212761524771">
-    </div>
-
-    <footer>
-        Developer: <strong>Idriss Ben Fares</strong><br>
-        HTML + C++
-    </footer>
 </div>
+
+<!-- Hero -->
+<div class="hero">
+    <h1>
+        I'm Idriss.<br>
+        I Build <span>Everything Fast.</span>
+    </h1>
+
+    <p>
+        I am a Full Stack Developer who builds modern, fast and clean web applications.
+        From backend to frontend, I turn ideas into real products.
+    </p>
+
+    <div class="buttons">
+        <a class="btn btn-primary" href="#">See My Work</a>
+        <a class="btn btn-secondary" href="#">Start a Project</a>
+    </div>
+
+    <div class="info">
+        📧 idriss.dev@gmail.com  
+        📱 +212 761 524 771
+    </div>
+
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">React</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">High Performance</div>
+    </div>
+</div>
+
+<!-- What I Do -->
+<div class="section">
+    <h2>What I Do</h2>
+    <p>
+        I handle the full development process, ensuring speed, clean code,
+        and professional results.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Rapid Web Development</h3>
+            <p>Fast, responsive, SEO-friendly websites using modern technologies.</p>
+        </div>
+
+        <div class="card">
+            <h3>Backend Systems</h3>
+            <p>Secure APIs, databases, authentication and server logic.</p>
+        </div>
+
+        <div class="card">
+            <h3>UI / UX Design</h3>
+            <p>Clean, modern interfaces optimized for user experience.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2026 — Developer: Idriss Ben Fares
+</footer>
 
 </body>
 </html>

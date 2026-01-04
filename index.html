@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Contact | Idriss Ben Fares</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #25D366, #075E54);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bgMove 6s infinite alternate;
+}
+
+@keyframes bgMove {
+    from {background-position: left;}
+    to {background-position: right;}
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 25px;
+    width: 320px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    animation: pop 1s ease;
+}
+
+@keyframes pop {
+    from {transform: scale(0.8); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+.logo {
+    width: 90px;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+h1 {
+    margin: 15px 0 5px;
+    font-size: 22px;
+}
+
+.number {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1db954;
+    transform: scale(1.05);
+}
+
+.socials a {
+    display: inline-block;
+    margin: 10px 8px;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    transform: scale(1.3);
+}
+
+.qr img {
+    width: 140px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+footer {
+    margin-top: 15px;
+    font-size: 13px;
+    opacity: 0.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+
+    <h1>تواصل معي</h1>
+    <div class="number">📱 0761524771</div>
+
+    <a class="btn" href="https://wa.me/212761524771" target="_blank">
+        فتح واتساب
+    </a>
+
+    <div class="socials">
+        <a href="https://facebook.com" target="_blank">📘</a>
+        <a href="https://instagram.com" target="_blank">📸</a>
+        <a href="https://tiktok.com" target="_blank">🎵</a>
+    </div>
+
+    <div class="qr">
+        <p>QR Code</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/212761524771">
+    </div>
+
+    <footer>
+        Developer: <strong>Idriss Ben Fares</strong><br>
+        HTML + C++
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #1e293b, #020617);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay Glow */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, #6366f1, transparent 40%);
+  opacity: 0.4;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+}
+
+.logo {
+  color: #818cf8;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar li {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.navbar li:hover {
+  opacity: 1;
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 120px 80px;
+}
+
+.content h1 {
+  font-size: 50px;
+}
+
+.content h2 {
+  font-size: 42px;
+  margin: 10px 0;
+  color: #818cf8;
+}
+
+.content p {
+  margin: 20px 0;
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #6366f1;
+  color: #fff;
+}
+
+.primary:hover {
+  background: #4f46e5;
+}
+
+.secondary {
+  border: 2px solid #6366f1;
+  color: #fff;
+}
+
+.secondary:hover {
+  background: #6366f1;
+}

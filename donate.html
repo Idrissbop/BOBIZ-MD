@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SanTrope Trilogy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="shortcut icon" href="style\images\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style\css\main.css">
+    <link rel="stylesheet" href="style\css\media.css">
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 col-md-2 logotrilogy_block">
+                    <img src="style\images\logotrilogy.png" class="logotrilogy" alt="">
+                </div>
+                <div class="col-xs-3 col-md-8">
+                    <a href="#" class="mobile_nav">
+                        <span></span>
+                    </a>
+                    <ul class="nav_menu">
+                        <li class="active"><a href="index.htm">Главная</a></li>
+                        <li><a href="https://forum.russia-mobile.online/index.php">Форум</a></li>
+                        <li>
+                            <a href="">Вконтакте</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-2">
+                    <a href="donate.html" class="login_btn">
+                        <div class="box">
+                            Донат
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 area_forms">
+                    <img src="style\images\girl.png" class="girl" alt="">
+                    <h3>Пополнение счета</h3>
+                    <form action="/application/controllers/adonate.php" method="POST" style="margin-top: 80px;">
+                        <div class="input_group">
+                            <img src="style\images\man-user.png" alt="" class="icon">
+                            <input type="text" name="user_name" placeholder="Ник-Нейм на сервере">
+                        </div>
+                        <div class="input_group">
+                            <img src="style\images\ruble-currency-sign.png" alt="" class="icon">
+                            <input type="text" name="amount" placeholder="Сумма пополнения">
+                        </div>
+                        <div class="input_group">
+                            <img src="style\images\server.png" alt="" class="icon">
+                            <select name="server">
+                                <option value="0" selected="">Выбрать сервер</option>
+                                <option value="1">Server 1</option>
+                            </select>
+                        </div>
+                        <div class="input_group">
+                            <img src="style\images\envelope.png" alt="" class="icon">
+                            <input type="text" name="mail" placeholder="Электронная почта">
+                        </div>
+                        <input type="hidden" name="action" value="pay">
+                        <button class="button_go">Оплатить</button>
+                    </form>
+                </div>
+                <div class="col-md-12 why_buy">
+                    <h3>Что можно приобрести?</h3>
+                    <ul class="shop_list">
+                        <li>
+                            <div class="cost">90₽</div>
+                            <div class="icon"><img src="style\images\coins.png" alt=""></div>
+                            <div class="value">100.000 $</div>
+                            <!-- <div class="value">180 койнов (выгода 20 койнов)</div> -->
+                        </li>
+                        <li>
+                            <div class="cost">200₽</div>
+                            <div class="icon"><img src="style\images\change.png" alt=""></div>
+                            <div class="value">250.000 $</div>
+                        </li>
+                        <li>
+                            <div class="cost">400₽</div>
+                            <div class="icon"><img src="style\images\notes.png" alt=""></div>
+                            <div class="value">550.000 $</div>
+                        </li>
+                        <li>
+                            <div class="cost">800₽</div>
+                            <div class="icon"><img src="style\images\money-bag.png" alt=""></div>
+                            <div class="value">1 400 000 $</div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="style\js\index.js"></script>
+    <script src="style\js\form.js"></script>
+</body>
+
+</html>
